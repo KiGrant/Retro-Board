@@ -1,3 +1,9 @@
+<!--
+Most of the HTML <head> and part of the outer <body> should be included when you
+install the "react-scripts".
+This is inspired by "Fun Retro", which you can try out yourself by creating your own board
+@see https://funretro.io/
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,35 +13,160 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Retro-Board</title>
+    <link rel="stylesheet" href="retro-board.css" />
+    <title>Retro Board Project</title>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root">
+      <!-- Start of what is rendered in React -->
+      <main class="content">
+        <h1>Retro Board</h1>
+        <div class="RetroBoad">
+          <div class="RetroBoardCategory RetroBoardCategory-1">
+            <h2>Went Well</h2>
+            <button type="button" class="button button-new">
+              <span class="sr-only">Add to "Went Well"</span>+
+            </button>
+            <div class="Retro">
+              <label class="sr-only" for="retro-label-1"
+                >Enter retro text</label
+              >
+              <textarea
+                id="retro-label-1"
+                class="textbox"
+                placeholder="Enter text here"
+                rows="1"
+              >
+I coded my first React component and it worked</textarea
+              >
+              <div class="ButtonGroup">
+                <button type="button" class="button button-left">
+                  <span class="sr-only">Move Left</span>&lt;
+                </button>
+                <button type="button" class="button button-delete">
+                  <span class="sr-only">Delete</span>×
+                </button>
+                <button type="button" class="button button-right">
+                  <span class="sr-only">Move Right</span>&gt;
+                </button>
+              </div>
+            </div>
+            <div class="Retro">
+              <label class="sr-only" for="retro-label-6"
+                >Enter retro text</label
+              >
+              <textarea
+                id="retro-label-6"
+                class="textbox"
+                placeholder="Enter text here"
+                rows="1"
+              ></textarea>
+              <div class="ButtonGroup">
+                <button type="button" class="button button-left">
+                  <span class="sr-only">Move Left</span>&lt;
+                </button>
+                <button type="button" class="button button-delete">
+                  <span class="sr-only">Delete</span>×
+                </button>
+                <button type="button" class="button button-right">
+                  <span class="sr-only">Move Right</span>&gt;
+                </button>
+              </div>
+            </div>
+          </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          <div class="RetroBoardCategory RetroBoardCategory-2">
+            <h2>To Improve</h2>
+            <button type="button" class="button button-new">
+              <span class="sr-only">Add to "To Improve"</span>+
+            </button>
+            <div class="Retro">
+              <label class="sr-only" for="retro-label-2"
+                >Enter retro text</label
+              >
+              <textarea
+                id="retro-label-2"
+                class="textbox"
+                placeholder="Enter text here"
+                rows="1"
+              >
+Life</textarea
+              >
+              <div class="ButtonGroup">
+                <button type="button" class="button button-left">
+                  <span class="sr-only">Move Left</span>&lt;
+                </button>
+                <button type="button" class="button button-delete">
+                  <span class="sr-only">Delete</span>×
+                </button>
+                <button type="button" class="button button-right">
+                  <span class="sr-only">Move Right</span>&gt;
+                </button>
+              </div>
+            </div>
+            <div class="Retro">
+              <label class="sr-only" for="retro-label-3"
+                >Enter retro text</label
+              >
+              <textarea
+                id="retro-label-3"
+                class="textbox"
+                placeholder="Enter text here"
+                rows="1"
+              >
+Thinking more positively</textarea
+              >
+              <div class="ButtonGroup">
+                <button type="button" class="button button-left">
+                  <span class="sr-only">Move Left</span>&lt;
+                </button>
+                <button type="button" class="button button-delete">
+                  <span class="sr-only">Delete</span>×
+                </button>
+                <button type="button" class="button button-right">
+                  <span class="sr-only">Move Right</span>&gt;
+                </button>
+              </div>
+            </div>
+          </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          <div class="RetroBoardCategory RetroBoardCategory-3">
+            <h2>Action Items</h2>
+            <button type="button" class="button button-new">
+              <span class="sr-only">Add to "Action Items"</span>+
+            </button>
+            <div class="Retro">
+              <label class="sr-only" for="retro-label-4"
+                >Enter retro text</label
+              >
+              <textarea
+                id="retro-label-4"
+                class="textbox"
+                placeholder="Enter text here"
+                rows="1"
+              >
+Completing this</textarea
+              >
+              <div class="ButtonGroup">
+                <button type="button" class="button button-left">
+                  <span class="sr-only">Move Left</span>&lt;
+                </button>
+                <button type="button" class="button button-delete">
+                  <span class="sr-only">Delete</span>×
+                </button>
+                <button type="button" class="button button-right">
+                  <span class="sr-only">Move Right</span>&gt;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- End of what is rendered in React -->
+    </div>
   </body>
 </html>
