@@ -147,3 +147,18 @@ html {
   white-space: nowrap;
   border: 0;
 }
+.LikeButton{
+  display: inline-block;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.DislikeButton{
+  display: inline-block;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
