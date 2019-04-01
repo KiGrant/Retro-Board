@@ -18,12 +18,8 @@ Open the terminal. Once it is open CD to the Retro-Board folder.
     From the terminal, type `npm install -g yarn`
 
 ### Installing
-```bash
-cd react-exercises/12-todo-list
-code . # if you would like to open this in a separate VSCode window
 yarn install
 yarn start
-```
 
 ## Authors
 * **Kishon Grant** - 
